@@ -1,0 +1,80 @@
+/* Color Palette */
+:root {
+  --primary-color: #007bff; /* Primary color */
+  --button-bg-color: #28a745; /* Button background color */
+  --button-hover-bg-color: #218838; /* Button hover background color */
+  --heading-color: #333; /* Heading color */
+  --text-color: #666; /* Text color */
+}
+
+/* Palette #1 ----
+Type of Website: Corporate or Business Website
+
+Usage: The blue primary color conveys professionalism and trustworthiness, making it suitable for corporate or business websites. The green secondary color can represent growth or success, while the yellow accent color can be used for highlighting important elements or calls to action. The light gray background color provides a clean and modern look, with the dark gray text color ensuring readability and accessibility. ---- */
+:root {
+  --primary-color: #007bff;        /* Blue */
+  --secondary-color: #28a745;      /* Green */
+  --accent-color: #ffc107;         /* Yellow */
+  --background-color: #f8f9fa;     /* Light Gray */
+  --text-color: #343a40;           /* Dark Gray */
+}
+
+/* Palette #2 ----
+Type of Website: Creative or Artistic Portfolio
+
+Usage: The vibrant and contrasting colors in this palette make it ideal for creative or artistic portfolios, such as those showcasing photography, design, or artwork. The tomato primary color adds energy and excitement, while the slate blue secondary color offers depth and sophistication. The gold accent color can be used to add luxurious touches, and the khaki background color provides warmth without overshadowing the vibrant content. The dark slate gray text color ensures readability against the colorful backdrop. ---- */
+:root {
+  --primary-color: #ff6347;        /* Tomato */
+  --secondary-color: #6a5acd;      /* Slate Blue */
+  --accent-color: #ffd700;         /* Gold */
+  --background-color: #f0e68c;     /* Khaki */
+  --text-color: #2f4f4f;           /* Dark Slate Gray */
+}
+
+/* Palette #3 ----
+Type of Website: Lifestyle or Fashion Blog
+
+Usage: This palette exudes a trendy and fashionable vibe, making it perfect for lifestyle or fashion blogs. The orange-red primary color adds a bold and eye-catching element, while the dark slate blue secondary color provides a sense of elegance and style. The dark turquoise accent color adds a pop of color for emphasis, and the beige background color creates a neutral canvas for the vibrant content to stand out. The teal text color adds a modern touch while maintaining readability.---- */
+:root {
+  --primary-color: #ff4500;        /* Orange Red */
+  --secondary-color: #483d8b;      /* Dark Slate Blue */
+  --accent-color: #00ced1;         /* Dark Turquoise */
+  --background-color: #f5f5dc;     /* Beige */
+  --text-color: #008080;           /* Teal */
+}
+
+/* Palette #4 ----
+Type of Website: Restaurant Website
+
+Usage: This palette is suitable for a restaurant website, evoking a modern and inviting atmosphere. The watermelon red primary color adds a vibrant and appetizing feel, while the light mint secondary color complements it with freshness. The powder blue accent color adds a touch of sophistication, and the dark midnight blue background color provides a classy backdrop for showcasing food images and menus. White text color ensures readability and contrasts well with the background. ---- */
+:root {
+--primary-color: #E63946; /* Watermelon Red */
+--secondary-color: #F1FAEE; /* Light Mint */ 
+--accent-color: #A8DADC; /* Powder Blue */
+--background-color: #1D3557; /* Dark Midnight Blue */
+--text-color: #FFFFFF; /* White */
+}
+
+/* Palette #5 ----
+Type of Website: Personal Website
+
+Usage: This palette is ideal for a personal website, offering a balance of professionalism and creativity. The midnight blue primary color exudes a sense of depth and sophistication, while the sky blue secondary color adds a refreshing and calming touch. The tomato red accent color injects energy and personality, and the light gray background color creates a clean and modern look. Dark gray text color ensures readability and complements the overall design. ---- */
+:root{
+--primary-color: #2C3E50; /* Midnight Blue */
+--secondary-color: #3498DB; /* Sky Blue */
+--accent-color: #E74C3C; /* Tomato Red */
+--background-color: #F5F5F5; /* Light Gray */
+--text-color: #333333; /* Dark Gray **/
+}
+
+/* Palette #6 ----
+Type of Website: Software Engineer Portfolio
+
+Usage: This palette is tailored for a software engineer portfolio, conveying professionalism and creativity. The cerulean blue primary color exudes confidence and reliability, while the emerald green secondary color adds a touch of freshness and innovation. The sunflower yellow accent color injects energy and optimism, and the light silver background color creates a clean and contemporary look. Dark midnight blue text color ensures readability and complements the overall design. ---- */
+:root {
+  --primary-color: #2980B9; /* Cerulean Blue */
+  --secondary-color: #27AE60; /* Emerald Green */
+  --accent-color: #F39C12; /* Sunflower Yellow */
+  --background-color: #ECF0F1; /* Light Silver */
+  --text-color: #2C3E50; /* Dark Midnight Blue **/
+  }

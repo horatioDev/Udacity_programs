@@ -1,0 +1,99 @@
+1. We want to find out the most popular music Genre for each country. We determine the most popular genre as the genre with the highest amount of purchases. Write a query that returns each country along with the top Genre. For countries where the maximum number of purchases is shared, return all Genres.
+
+You will need to use the Invoice, InvoiceLine, Customer, Track, and Genre tables for this query.
+
+Query#1:
+WITH CountryGenrePurchases AS (
+    SELECT
+        COUNT(*) AS Purchases,
+        C.Country,
+        G.Name,
+        G.GenreId,
+        RANK() OVER (PARTITION BY C.Country ORDER BY COUNT(*) DESC) AS GenreRank
+    FROM
+        Customer AS C
+    JOIN
+        Invoice AS I ON C.CustomerId = I.CustomerId
+    JOIN
+        InvoiceLine AS IL ON I.InvoiceId = IL.InvoiceId
+    JOIN
+        Track AS T ON IL.TrackId = T.TrackId
+    JOIN
+        Genre AS G ON T.GenreId = G.GenreId
+    GROUP BY
+        C.Country, G.Name, G.GenreId
+)
+SELECT
+    CGP.Purchases,
+    CGP.Country,
+    CGP.Name AS Genre,
+    CGP.GenreId
+FROM
+    CountryGenrePurchases AS CGP
+WHERE
+    CGP.GenreRank = 1;
+
+
+2. Return all the track names that have a song length longer than the average song length. Though you could perform this with two queries. Imagine you wanted your query to update based on when new data is put in the database. Therefore, you do not want to hard code the average into your query. You only need the Track table to complete this query.
+
+Return the Name and Milliseconds for each track. Order by the song length with the longest songs listed first.
+
+Query#2:
+WITH TrackLength AS (
+    SELECT
+        Name,
+        Milliseconds,
+        AVG(Milliseconds) OVER () AS AvgLength
+    FROM
+        Track
+)
+SELECT
+    Name,
+    Milliseconds
+FROM
+    TrackLength
+WHERE
+    Milliseconds > AvgLength
+ORDER BY
+    Milliseconds DESC;
+
+
+3. Write a query that determines the customer that has spent the most on music for each country. Write a query that returns the country along with the top customer and how much they spent. For countries where the top amount spent is shared, provide all customers who spent this amount.
+
+You should only need to use the Customer and Invoice tables.
+
+Query#3:
+WITH CustomerSpending AS (
+    SELECT
+        c.CustomerId,
+        c.FirstName || ' ' || c.LastName AS CustomerName,
+        c.Country,
+        SUM(i.Total) AS TotalSpent
+    FROM
+        Customer c
+    JOIN
+        Invoice i ON c.CustomerId = i.CustomerId
+    GROUP BY
+        c.CustomerId, c.Country
+)
+, MaxSpendingPerCountry AS (
+    SELECT
+        Country,
+        MAX(TotalSpent) AS MaxSpent
+    FROM
+        CustomerSpending
+    GROUP BY
+        Country
+)
+SELECT
+    msc.Country,
+    cs.CustomerName,
+    cs.TotalSpent
+FROM
+    CustomerSpending cs
+JOIN
+    MaxSpendingPerCountry msc ON cs.Country = msc.Country
+WHERE
+    cs.TotalSpent = msc.MaxSpent
+ORDER BY
+    msc.Country, cs.TotalSpent DESC;

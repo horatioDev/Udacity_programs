@@ -1,0 +1,53 @@
+/* Layout Styles */
+.container {
+  border: 2px dashed red;
+  display: grid;
+  grid-template-rows: minmax(80px, auto);
+  grid-template-areas: 
+  "hdr"
+  "content"
+  "ftr";
+  height: 100vh;
+  width: 100vw;
+}
+
+.blog_content {
+  grid-area: content;
+  border: 1px solid red;
+}
+
+.blog_card {
+  border: 1px solid red;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.blog_thumbnail img {
+  max-width: 200px;
+  margin: 15px;
+}
+
+.blog_info {
+  border: 1px solid red;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+footer {
+  grid-area:  ftr;
+}
+
+
+/* Media Queries */ 
+/* -------------------------- */
+/* Medium Screens */
+@media (min-width: 600px) and (max-width:900px) {
+  .container {
+  }
+}
+
+/* Large Screens */
+@media (min-width:901px) {
+  .container {
+  }
+}

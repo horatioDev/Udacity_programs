@@ -1,0 +1,142 @@
+/* Layout Styles for Corporate or Business Website */
+
+/* Container */
+.container-corporate {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header-corporate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.logo-corporate {
+  flex: 1;
+}
+
+.nav-corporate {
+  display: flex;
+}
+
+.nav-item-corporate {
+  margin-right: 20px;
+}
+
+/* Main Content */
+.main-corporate {
+  flex: 1;
+}
+
+/* Footer */
+.footer-corporate {
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Layout Styles for Creative or Artistic Portfolio */
+
+.container-portfolio {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.portfolio-item {
+  width: 100%;
+}
+
+/* Layout Styles for Lifestyle or Fashion Blog */
+
+.container-blog {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.blog-post {
+  width: 100%;
+}
+
+/* Layout Styles for Restaurant Website */
+
+.container-restaurant {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.menu-restaurant {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.menu-item {
+  width: 100%;
+}
+
+/* Layout Styles for Personal Website */
+
+.container-personal {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Layout Styles for Software Engineer Portfolio */
+
+.container-software {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.project-item {
+  width: 100%;
+}
+
+/* Layout Styles for Financial Services */
+
+.container-financial {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.financial-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.service-item {
+  width: 100%;
+}

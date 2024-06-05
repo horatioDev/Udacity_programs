@@ -1,0 +1,79 @@
+/* Layout Styles */
+#blog {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  grid-template-rows: auto;
+  grid-template-areas: 
+  'header'
+  'content'
+  'footer';
+}
+
+.container,
+.blog-header-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#header {
+  grid-area: header;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  padding: 20px 0;
+  height: 60px;
+}
+
+.logo {
+  margin: 0;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline;
+  margin-right: 20px;
+}
+
+.main {
+  margin-top: 20px;
+}
+
+blockquote {
+  font-style: italic;
+  color: var(--blockqoute-color);
+}
+
+.blog-posts-container,
+.blog-post-container {
+  grid-area: content;
+  /* align-items: center; */
+  
+  /* height: 600px; For demo purposes only */
+}
+
+.blog-post-container {
+  padding: 20px;
+}
+
+
+
+#footer {
+  grid-area: footer;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  margin-top: 0;
+}

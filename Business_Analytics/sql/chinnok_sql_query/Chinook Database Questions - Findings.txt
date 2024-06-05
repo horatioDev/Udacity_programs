@@ -1,0 +1,66 @@
+1. Which artist's tracks are featured in the most playlists? Provide the artist name and the number of playlists their tracks are included in.
+
+Finding: The artist with the most tracks featured in playlists is [Artist Name], with [Number of Playlists] playlists including their tracks.
+
+Insight: This finding highlights the artist whose music has the widest playlist presence, indicating their popularity among listeners and curators.
+
+Recommended Chart Type and Layout: A horizontal bar chart is ideal for this finding. It allows viewers to quickly grasp the artist's playlist reach, with artist names on the vertical axis and playlist counts on the horizontal axis.
+
+1. Horizontal Bar Chart (Question 1):
+
+-Select the data containing artist names and the number of playlists they are featured in.
+-Go to the "Insert" menu and choose "Chart."
+-In the Chart Editor, under "Chart type," select "Bar chart."
+-Set the Horizontal axis to "Number of Playlists" and the Vertical axis to "Artist Name."
+-Customize the chart title, labels, and colors as needed.
+
+########################################################
+
+2. Can you find the average time it takes for customers to make their second purchase (in days) after their initial purchase for one genre compared to three other genres?
+
+Finding: For the 'Rock' genre, the average time to the second purchase is approximately 18 days.
+For the 'Pop' genre, customers tend to make their second purchase after around 21 days.
+In the 'Hip Hop' genre, the average time to the second purchase is about 19 days.
+
+Insight: This metric indicates the typical customer behavior and loyalty, revealing how quickly customers return to make a subsequent purchase. The Pop genre has an average time for the second purchase of around 21 days, while the Rock genre customers have a shorter time to their second purchase, at approximately 18 days. This suggests a quicker engagement with additional purchases in these specific genres.
+
+Recommended Chart Type and Layout: For this single average value, a data table or numeric value presentation is suitable.
+
+. Data Table (Question 2):
+
+-Calculate the average time in days.
+-In a cell, display the average value.
+-You can format the cell to make it stand out or use conditional formatting to highlight it.
+
+#######################################################
+
+3. Identify the top 10 selling albums (based on the number of tracks sold). List the album title, artist, and the total number of tracks sold for each of the top 10 albums.
+
+Finding: The top-selling album is "[Album Title]" by [Artist Name], with [Total Tracks Sold] tracks sold. This is part of the list of the top 10 selling albums.
+
+Insight: Recognizing the best-selling albums and their track sales provides valuable insights into customer preferences and popular music choices.
+
+Recommended Chart Type and Layout: A horizontal bar chart effectively displays the top 10 selling albums. Album titles are on the vertical axis, and total track sales are on the horizontal axis.
+
+-Select the data with the top 10 selling albums, including album titles and total tracks sold.
+-Go to the "Insert" menu and choose "Chart."
+-In the Chart Editor, under "Chart type," select "Bar chart."
+-Set the Horizontal axis to "Total Tracks Sold" and the Vertical axis to "Album Title."
+-Customize the chart title, labels, and colors as needed.
+
+#########################################################
+
+4. Find the most popular media type in the database. Which media type is used for the highest number of tracks? List the media type name and the number of tracks associated with it.
+
+Finding: The most popular media type is "[Media Type Name]," associated with [Number of Tracks] tracks.
+
+Insight: Identifying the most popular media type highlights the predominant format used for music distribution, which can inform inventory decisions.
+
+Recommended Chart Type and Layout: A pie chart is suitable for visualizing the distribution of media types. Each media type is represented as a slice of the pie, with labels for media type names and track counts. This illustrates the relative prevalence of each media type.
+
+-Select the data showing media type names and the number of tracks associated with each type.
+-Go to the "Insert" menu and choose "Chart."
+-In the Chart Editor, under "Chart type," select "Pie chart."
+-Customize the chart title, labels, and colors as needed.
+
+#########################################################

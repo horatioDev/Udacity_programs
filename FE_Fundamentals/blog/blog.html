@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCo Design System</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Internal CSS -->
+    <style>
+        /* Color Palette */
+        :root {
+          --primary-color: #2980B9; /* Cerulean Blue */
+  --secondary-color: #27AE60; /* Emerald Green */
+  --accent-color: #F39C12; /* Sunflower Yellow */
+  --background-color: #ECF0F1; /* Light Silver */
+  --text-color: #2C3E50;
+        }
+        /* Typography */
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 16px;
+        }
+        /* Components */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .primary-button {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        .secondary-button {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        .tertiary-button {
+            background-color: var(--accent-color);
+            color: black;
+        }
+        /* Patterns */
+        .hero-banner {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .testimonials {
+            margin-top: 50px;
+            padding: 20px;
+            border: 1px solid var(--secondary-color);
+            border-radius: 5px;
+        }
+        /* Accessibility */
+        .accessible {
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <!-- Design Principles -->
+    <h1>TechCo Design Principles</h1>
+    <p>Simplicity, usability, and accessibility.</p>
+    
+    <!-- Color Palette -->
+    <h2>Color Palette</h2>
+    <p>Primary Color: #007bff</p>
+    <p>Secondary Color: #28a745</p>
+    <p>Accent Color: #ffc107</p>
+    <p>Background Color: #f8f9fa</p>
+    <p>Text Color: #343a40</p>
+    
+    <!-- Typography -->
+    <h2>Typography</h2>
+    <p>Font Family: Roboto, sans-serif</p>
+    <p>Heading 1: 32px, bold</p>
+    <p>Heading 2: 24px, bold</p>
+    <p>Body Text: 16px</p>
+    
+    <!-- Components -->
+    <h2>Components</h2>
+    <a href="#" class="button primary-button">Primary Button</a>
+    <a href="#" class="button secondary-button">Secondary Button</a>
+    <a href="#" class="button tertiary-button">Tertiary Button</a>
+    
+    <!-- Patterns -->
+    <h2>Patterns</h2>
+    <div class="hero-banner">
+        <h1>Hero Banner</h1>
+        <p>Welcome to TechCo!</p>
+    </div>
+    <div class="testimonials">
+        <h2>Testimonials</h2>
+        <p class="accessible">"Great product, easy to use!"</p>
+    </div>
+    
+    <!-- Accessibility -->
+    <h2>Accessibility</h2>
+    <p class="accessible">Ensure color contrast and keyboard navigation.</p>
+    
+    <!-- Icons (Font Awesome) -->
+    <h2>Iconography</h2>
+    <i class="fas fa-check-circle"></i>
+    <i class="fas fa-times-circle"></i>
+</body>
+</html>

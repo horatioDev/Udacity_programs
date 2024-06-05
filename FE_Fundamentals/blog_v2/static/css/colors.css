@@ -1,0 +1,8 @@
+/* Color Palette */
+:root {
+  --primary-color: #f8f3f3; /* Primary color */
+  --background-color:  #0055b3; /* Background color */
+  --heading-color: #000; /* Heading text color */
+  --card-button-hover: #0056b3; /* Card button hover color */
+  --blockqoute-color: #666; /* Blockqoute color */ 
+}

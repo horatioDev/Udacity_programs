@@ -1,0 +1,128 @@
+1.Use your query to return the email, first name, last name, and Genre of all Rock Music listeners (Rock & Roll would be considered a different category for this exercise). Return your list ordered alphabetically by email address starting with A.
+
+I chose to link information from the Customer, Invoice, InvoiceLine, Track, and Genre tables, but you may be able to find another way to get at the information.
+
+Query#1:
+WITH BestCustomers AS (
+    SELECT
+        C.CustomerId,
+        C.Email,
+        C.FirstName,
+        C.LastName
+    FROM
+        Customer AS C
+    JOIN
+        Invoice AS I ON C.CustomerId = I.CustomerId
+    JOIN
+        InvoiceLine AS IL ON I.InvoiceId = IL.InvoiceId
+    GROUP BY
+        C.CustomerId, C.Email, C.FirstName, C.LastName
+    ORDER BY
+        SUM(IL.UnitPrice * IL.Quantity) DESC
+)
+
+SELECT 
+    BC.Email, 
+    BC.FirstName, 
+    BC.LastName, 
+    G.Name AS Genre
+FROM 
+    BestCustomers AS BC
+JOIN 
+    Invoice AS I ON BC.CustomerId = I.CustomerId
+JOIN 
+    InvoiceLine AS IL ON I.InvoiceId = IL.InvoiceId
+JOIN 
+    Track AS T ON IL.TrackId = T.TrackId
+JOIN 
+    Genre AS G ON T.GenreId = G.GenreId
+WHERE 
+    G.Name = 'Rock'
+ORDER BY 
+    BC.Email;
+
+
+2. Who is writing the rock music?
+
+Now that we know that our customers love rock music, we can decide which musicians to invite to play at the concert.
+
+Let's invite the artists who have written the most rock music in our dataset. Write a query that returns the Artist name and total track count of the top 10 rock bands.
+
+You will need to use the Genre, Track , Album, and Artist tables.
+
+Query#2:
+SELECT
+    AR.Name AS ArtistName,
+    COUNT(TR.TrackId) AS TrackCount
+FROM
+    Artist AS AR
+JOIN
+    Album AS AL ON AR.ArtistId = AL.ArtistId
+JOIN
+    Track AS TR ON AL.AlbumId = TR.AlbumId
+JOIN
+    Genre AS GE ON TR.GenreId = GE.GenreId
+WHERE
+    GE.Name = 'Rock'
+GROUP BY
+    AR.Name
+ORDER BY
+    TrackCount DESC
+LIMIT 10;
+
+
+3. First, find which artist has earned the most according to the InvoiceLines?
+
+Now use this artist to find which customer spent the most on this artist.
+
+For this query, you will need to use the Invoice, InvoiceLine, Track, Customer, Album, and Artist tables.
+
+Notice, this one is tricky because the Total spent in the Invoice table might not be on a single product, so you need to use the InvoiceLine table to find out how many of each product was purchased, and then multiply this by the price for each artist.
+
+Query#3:
+-- Find the artist with the highest earnings
+WITH ArtistEarnings AS (
+    SELECT
+        AR.ArtistId,
+        AR.Name AS ArtistName,
+        SUM(IL.UnitPrice * IL.Quantity) AS TotalEarnings
+    FROM
+        Artist AS AR
+    JOIN
+        Album AS AL ON AR.ArtistId = AL.ArtistId
+    JOIN
+        Track AS TR ON AL.AlbumId = TR.AlbumId
+    JOIN
+        InvoiceLine AS IL ON TR.TrackId = IL.TrackId
+    GROUP BY
+        AR.ArtistId, AR.Name
+    ORDER BY
+        TotalEarnings DESC
+    LIMIT 1
+)
+
+-- Find the customer who spent the most on this artist
+SELECT
+    C.CustomerId,
+    C.FirstName,
+    C.LastName,
+    C.Email,
+    AE.ArtistName,
+    SUM(IL.UnitPrice * IL.Quantity) AS TotalSpent
+FROM
+    Customer AS C
+JOIN
+    Invoice AS I ON C.CustomerId = I.CustomerId
+JOIN
+    InvoiceLine AS IL ON I.InvoiceId = IL.InvoiceId
+JOIN
+    Track AS TR ON IL.TrackId = TR.TrackId
+JOIN
+    Album AS AL ON TR.AlbumId = AL.AlbumId
+JOIN
+    ArtistEarnings AS AE ON AL.ArtistId = AE.ArtistId
+GROUP BY
+    C.CustomerId, C.FirstName, C.LastName, C.Email, AE.ArtistName
+ORDER BY
+    TotalSpent DESC
+LIMIT 1;

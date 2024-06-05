@@ -1,0 +1,94 @@
+/* Import additional CSS files */
+@import url('typography.css');
+@import url('colors.css');
+@import url('layout.css');
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 80px;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+.blog_card {
+  display: flex;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin-bottom: 40px;
+}
+
+.blog_thumbnail img {
+  max-width: 300px;
+  margin: 15px;
+}
+
+.blog_info h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--heading-color);
+  margin-bottom: 10px;
+}
+
+.blog_info p {
+  font-size: 16px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: var(--button-bg-color);
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--button-hover-bg-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  height: 80px;
+}
+
+
+
+
+
+
+

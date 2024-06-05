@@ -1,0 +1,575 @@
+/* Palette: Corporate or Business Website --- */
+/* Headings */
+.corporate-h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333; /* Dark Gray */
+}
+
+.corporate-h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333; /* Dark Gray */
+}
+
+.corporate-h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; /* Dark Gray */
+}
+
+.corporate-h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333; /* Dark Gray */
+}
+
+.corporate-h5 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333; /* Dark Gray */
+}
+
+.corporate-h6 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; /* Dark Gray */
+}
+
+/* Paragraphs */
+.corporate-paragraph {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666; /* Gray */
+}
+
+/* Links */
+.corporate-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #007bff; /* Blue */
+  text-decoration: none;
+}
+
+.corporate-link:hover {
+  color: #0056b3; /* Darker Blue */
+}
+
+/* Buttons */
+.corporate-button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* White */
+  background-color: #007bff; /* Blue */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.corporate-button:hover {
+  background-color: #0056b3; /* Darker Blue */
+}
+/* --------------------------------------------------- */
+
+/* Typography: Creative or Artistic Portfolio --- */
+.creative-h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: #333; /* Dark Gray */
+}
+
+.creative-h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333; /* Dark Gray */
+}
+
+.creative-h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; /* Dark Gray */
+}
+
+.creative-h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333; /* Dark Gray */
+}
+
+.creative-h5 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333; /* Dark Gray */
+}
+
+.creative-h6 {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; /* Dark Gray */
+}
+
+/* Paragraphs */
+.creative-paragraph {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666; /* Gray */
+}
+
+/* Links */
+.creative-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #ff4500; /* Orange Red */
+  text-decoration: none;
+}
+
+.creative-link:hover {
+  color: #d43900; /* Darker Orange Red */
+}
+
+/* Buttons */
+.creative-button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* White */
+  background-color: #6a5acd; /* Slate Blue */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.creative-button:hover {
+  background-color: #483d8b; /* Darker Slate Blue */
+}
+/* --------------------------------------------------- */
+
+/* Typography: Lifestyle or Fashion Blog --- */
+.lifestyle-h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #d81b60; /* Pink */
+}
+
+.lifestyle-h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #d81b60; /* Pink */
+}
+
+.lifestyle-h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #d81b60; /* Pink */
+}
+
+.lifestyle-h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #d81b60; /* Pink */
+}
+
+.lifestyle-h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #d81b60; /* Pink */
+}
+
+.lifestyle-h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #d81b60; /* Pink */
+}
+
+/* Paragraphs */
+.lifestyle-paragraph {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333; /* Dark Gray */
+}
+
+/* Links */
+.lifestyle-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #008080; /* Teal */
+  text-decoration: none;
+}
+
+.lifestyle-link:hover {
+  color: #005457; /* Darker Teal */
+}
+
+/* Buttons */
+.lifestyle-button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* White */
+  background-color: #ff4500; /* Orange Red */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.lifestyle-button:hover {
+  background-color: #cc3700; /* Darker Orange Red */
+}
+
+/* --------------------------------------------------- */
+
+/* Palette: Restaurant Website --- */
+/* Headings */
+.restaurant-h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--primary-color); /* Watermelon Red */
+}
+
+.restaurant-h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--primary-color); /* Watermelon Red */
+}
+
+.restaurant-h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-color); /* Watermelon Red */
+}
+
+.restaurant-h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary-color); /* Watermelon Red */
+}
+
+.restaurant-h5 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary-color); /* Watermelon Red */
+}
+
+.restaurant-h6 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--primary-color); /* Watermelon Red */
+}
+
+/* Paragraphs */
+.restaurant-paragraph {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color); /* White */
+}
+
+/* Links */
+.restaurant-link {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: var(--secondary-color); /* Light Mint */
+  text-decoration: none;
+}
+
+.restaurant-link:hover {
+  color: var(--accent-color); /* Powder Blue */
+}
+
+/* Buttons */
+.restaurant-button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--background-color); /* Dark Midnight Blue */
+  background-color: var(--accent-color); /* Powder Blue */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.restaurant-button:hover {
+  background-color: var(--secondary-color); /* Light Mint */
+  color: var(--primary-color); /* Watermelon Red */
+}
+/* --------------------------------------------------- */
+
+/* Palette #2: Personal Website --- */
+/* Headings */
+.personal-h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  color: var(--primary-color); /* Midnight Blue */
+}
+
+.personal-h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--primary-color); /* Midnight Blue */
+}
+
+.personal-h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--primary-color); /* Midnight Blue */
+}
+
+.personal-h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-color); /* Midnight Blue */
+}
+
+.personal-h5 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary-color); /* Midnight Blue */
+}
+
+.personal-h6 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary-color); /* Midnight Blue */
+}
+
+/* Paragraphs */
+.personal-paragraph {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color); /* Dark Gray */
+}
+
+/* Links */
+.personal-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: var(--secondary-color); /* Sky Blue */
+  text-decoration: none;
+}
+
+.personal-link:hover {
+  color: var(--accent-color); /* Tomato Red */
+}
+
+/* Buttons */
+.personal-button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--background-color); /* Light Gray */
+  background-color: var(--accent-color); /* Tomato Red */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.personal-button:hover {
+  background-color: var(--secondary-color); /* Sky Blue */
+  color: var(--primary-color); /* Midnight Blue */
+}
+/* --------------------------------------------------- */
+
+/* Palette: Software Engineer Portfolio --- */
+/* Headings */
+.software-h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--primary-color); /* Cerulean Blue */
+}
+
+.software-h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  color: var(--primary-color); /* Cerulean Blue */
+}
+
+.software-h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--primary-color); /* Cerulean Blue */
+}
+
+.software-h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--primary-color); /* Cerulean Blue */
+}
+
+.software-h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-color); /* Cerulean Blue */
+}
+
+.software-h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary-color); /* Cerulean Blue */
+}
+
+/* Paragraphs */
+.software-paragraph {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color); /* Dark Midnight Blue */
+}
+
+/* Links */
+.software-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: var(--secondary-color); /* Emerald Green */
+  text-decoration: none;
+}
+
+.software-link:hover {
+  color: var(--accent-color); /* Sunflower Yellow */
+}
+
+/* Buttons */
+.software-button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--background-color); /* Light Silver */
+  background-color: var(--accent-color); /* Sunflower Yellow */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.software-button:hover {
+  background-color: var(--secondary-color); /* Emerald Green */
+  color: var(--primary-color); /* Cerulean Blue */
+}
+/* --------------------------------------------------- */
+
+/* Typography: Financial Website --- */
+/* Headings */
+.financial-h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #0047ab; /* Dark Blue */
+}
+
+.financial-h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #0047ab; /* Dark Blue */
+}
+
+.financial-h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #0047ab; /* Dark Blue */
+}
+
+.financial-h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0047ab; /* Dark Blue */
+}
+
+.financial-h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0047ab; /* Dark Blue */
+}
+
+.financial-h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0047ab; /* Dark Blue */
+}
+
+/* Paragraphs */
+.financial-paragraph {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333; /* Dark Gray */
+}
+
+/* Links */
+.financial-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #007bff; /* Blue */
+  text-decoration: none;
+}
+
+.financial-link:hover {
+  color: #0056b3; /* Darker Blue */
+}
+
+/* Buttons */
+.financial-button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* White */
+  background-color: #007bff; /* Blue */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.financial-button:hover {
+  background-color: #0056b3; /* Darker Blue */
+}
+/* --------------------------------------------------- */
